@@ -18,6 +18,7 @@ public struct CircularProcessBar: View {
     var percentColor: Color = .black
     var circleLineWidth: CGFloat = 10
     var barBackgroundColor: Color = .gray
+    var barBackgroundColorOpacity: Double = 0.3
     var barForegroundColor: Color = .blue
     var isPercentageTextVisible: Bool = true
     
@@ -33,7 +34,7 @@ public struct CircularProcessBar: View {
                     // Background Circle
                     Circle()
                         .stroke(lineWidth: circleLineWidth)
-                        .opacity(0.3)
+                        .opacity(barBackgroundColorOpacity)
                         .foregroundColor(barBackgroundColor)
                     
                     // User Circle
@@ -75,6 +76,13 @@ public struct CircularProcessBar: View {
     public func barBackgroundColor(_ color: Color) -> CircularProcessBar {
         var bar = self
         bar.barBackgroundColor = color
+        return bar
+    }
+    
+    /// Use to chance the background color opacity of the process bar.
+    public func barBackgroundColorOpacity(_ opacity: Double) -> CircularProcessBar {
+        var bar = self
+        bar.barBackgroundColorOpacity = opacity
         return bar
     }
     
