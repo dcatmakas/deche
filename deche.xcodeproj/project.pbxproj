@@ -11,6 +11,7 @@
 		43B8F4122B84FADD00A94B1C /* deche.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B8F4072B84FADD00A94B1C /* deche.framework */; };
 		43B8F4172B84FADD00A94B1C /* decheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B8F4162B84FADD00A94B1C /* decheTests.swift */; };
 		43B8F4182B84FADD00A94B1C /* deche.h in Headers */ = {isa = PBXBuildFile; fileRef = 43B8F40A2B84FADD00A94B1C /* deche.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43B8F4C72B852FBC00A94B1C /* CircularProcessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B8F4C62B852FBC00A94B1C /* CircularProcessView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		43B8F40B2B84FADD00A94B1C /* deche.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = deche.docc; sourceTree = "<group>"; };
 		43B8F4112B84FADD00A94B1C /* decheTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = decheTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B8F4162B84FADD00A94B1C /* decheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = decheTests.swift; sourceTree = "<group>"; };
+		43B8F4C62B852FBC00A94B1C /* CircularProcessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProcessView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				43B8F40A2B84FADD00A94B1C /* deche.h */,
+				43B8F4C52B852FA900A94B1C /* Views */,
 				43B8F40B2B84FADD00A94B1C /* deche.docc */,
 			);
 			path = deche;
@@ -83,6 +86,14 @@
 				43B8F4162B84FADD00A94B1C /* decheTests.swift */,
 			);
 			path = decheTests;
+			sourceTree = "<group>";
+		};
+		43B8F4C52B852FA900A94B1C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				43B8F4C62B852FBC00A94B1C /* CircularProcessView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43B8F40C2B84FADD00A94B1C /* deche.docc in Sources */,
+				43B8F4C72B852FBC00A94B1C /* CircularProcessView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +421,7 @@
 		43B8F41F2B84FADD00A94B1C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7XRJQ9854U;
@@ -425,6 +438,7 @@
 		43B8F4202B84FADD00A94B1C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7XRJQ9854U;
